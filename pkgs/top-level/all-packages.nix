@@ -7675,6 +7675,7 @@ with pkgs;
 
   jool-cli = callPackage ../os-specific/linux/jool/cli.nix { };
 
+  libkrun-efi = libkrun.override { variant = "efi"; };
   libkrun-sev = libkrun.override { variant = "sev"; };
   libkrun-tdx = libkrun.override { variant = "tdx"; };
 
